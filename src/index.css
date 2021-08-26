@@ -1,0 +1,8 @@
+.clock {
+  position: absolute;
+}
+
+.clockHand {
+  position: absolute;
+  transform-origin: center left;
+}
