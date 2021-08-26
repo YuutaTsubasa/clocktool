@@ -30,9 +30,15 @@ jobs:
       - name: NPM build script
         run: npm run build
         
+      - name: Zip files
+        uses: papeloto/action-zip@v1
+        with:
+          files: build
+          dest: build.zip
+      
       - name: Create Release
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
-          files: build
+          files: build.zip
