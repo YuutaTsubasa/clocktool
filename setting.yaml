@@ -1,26 +1,28 @@
 background: transparent
-clock-background: >-
-  url(https://png.pngitem.com/pimgs/s/64-649869_never-miss-a-moment-clock-face-jpg-hd.png)
+clock-background: white
 clock-size: 600px
 clock-border-length: 1px
 clock-border-color: '#ff0000'
 clock-border-radius: 600px
 hour-length-ratio: '0.5'
-hour-weight: 5px
+hour-weight: 12px
 hour-background: black
+hour-length-offset: 30px
 minute-length-ratio: '0.75'
-minute-weight: 5px
+minute-weight: 12px
 minute-background: black
-second-length-ratio: '0.8'
-second-weight: 3px
+minute-length-offset: 30px
+second-length-ratio: '0.95'
+second-weight: 12px
 second-background: red
+second-length-offset: 30px
 inject-css: |-
   body {
 
   }
 
   .clock {
-    background: black !important;
+
   }
       
   .clockHand {

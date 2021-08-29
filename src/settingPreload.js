@@ -14,12 +14,15 @@ const settingFields = {
     "hour-length-ratio": "0.5",
     "hour-weight": "5px",
     "hour-background": "black",
+    "hour-length-offset": "15px",
     "minute-length-ratio": "0.75",
     "minute-weight": "5px",
     "minute-background": "black",
+    "minute-length-offset": "15px",
     "second-length-ratio": "0.8",
     "second-weight": "3px",
     "second-background": "red",
+    "second-length-offset": "15px",
 };
 const injectCSSFieldName = "inject-css";
 const defaultInjectCSS = `body {

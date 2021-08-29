@@ -11,14 +11,17 @@
     --hour-length-ratio: 0.5;
     --hour-weight: 5px;
     --hour-background: black;
+    --hour-length-offset: 30px;
 
     --minute-length-ratio: 0.75;
     --minute-weight: 5px;
     --minute-background: black;
+    --minute-length-offset: 30px;
 
     --second-length-ratio: 0.8;
     --second-weight: 3px;
     --second-background: red;
+    --second-length-offset: 30px;
 }
 
 body {
@@ -38,26 +41,32 @@ body {
   
 .clockHand {
     position: absolute;
-    transform-origin: center left;
-    top: calc(var(--clock-size) / 2);
-    left: calc(var(--clock-size) / 2);
-    transform: translate(0, -50%) rotate(0deg);
+    transform: rotate(0deg);
 }
 
 .clockHand[data-type=hour] {
-    width: calc(var(--clock-size) / 2 * var(--hour-length-ratio));
+    transform-origin: var(--hour-length-offset) 50%;
+    left: calc(var(--clock-size) / 2 - var(--hour-length-offset));
+    top: calc(var(--clock-size) / 2 - var(--hour-weight) / 2);
+    width: calc(var(--clock-size) / 2 * var(--hour-length-ratio) + var(--second-length-offset));
     height: var(--hour-weight);
     background: var(--hour-background);
 }
 
 .clockHand[data-type=minute] {
-    width: calc(var(--clock-size) / 2 * var(--minute-length-ratio));
+    transform-origin: var(--minute-length-offset) 50%;
+    left: calc(var(--clock-size) / 2 - var(--minute-length-offset));
+    top: calc(var(--clock-size) / 2 - var(--minute-weight) / 2);
+    width: calc(var(--clock-size) / 2 * var(--minute-length-ratio) + var(--minute-length-offset));
     height: var(--minute-weight);
     background: var(--minute-background);
 }
 
 .clockHand[data-type=second] {
-    width: calc(var(--clock-size) / 2 * var(--second-length-ratio));
+    transform-origin: var(--second-length-offset) 50%;
+    left: calc(var(--clock-size) / 2 - var(--second-length-offset));
+    top: calc(var(--clock-size) / 2 - var(--second-weight) / 2);
+    width: calc(var(--clock-size) / 2 * var(--second-length-ratio) + var(--second-length-offset));
     height: var(--second-weight);
     background: var(--second-background);
 }
