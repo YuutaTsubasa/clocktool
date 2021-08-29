@@ -1,0 +1,63 @@
+:root {
+    --background: transparent;
+
+    --clock-background: white;
+    --clock-size: 600px;
+
+    --clock-border-length: 1px;
+    --clock-border-color: black;
+    --clock-border-radius: var(--clock-size);
+
+    --hour-length-ratio: 0.5;
+    --hour-weight: 5px;
+    --hour-background: black;
+
+    --minute-length-ratio: 0.75;
+    --minute-weight: 5px;
+    --minute-background: black;
+
+    --second-length-ratio: 0.8;
+    --second-weight: 3px;
+    --second-background: red;
+}
+
+body {
+    background: var(--background);
+}
+
+.clock {
+    position: absolute;
+    background: var(--clock-background);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: var(--clock-size);
+    height: var(--clock-size);
+    border: var(--clock-border-length) solid var(--clock-border-color);
+    border-radius: var(--clock-border-radius) var(--clock-border-radius);
+}
+  
+.clockHand {
+    position: absolute;
+    transform-origin: center left;
+    top: calc(var(--clock-size) / 2);
+    left: calc(var(--clock-size) / 2);
+    transform: translate(0, -50%) rotate(0deg);
+}
+
+.clockHand[data-type=hour] {
+    width: calc(var(--clock-size) / 2 * var(--hour-length-ratio));
+    height: var(--hour-weight);
+    background: var(--hour-background);
+}
+
+.clockHand[data-type=minute] {
+    width: calc(var(--clock-size) / 2 * var(--minute-length-ratio));
+    height: var(--minute-weight);
+    background: var(--minute-background);
+}
+
+.clockHand[data-type=second] {
+    width: calc(var(--clock-size) / 2 * var(--second-length-ratio));
+    height: var(--second-weight);
+    background: var(--second-background);
+}

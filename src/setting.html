@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>悠太個人工作室：時鐘實況工具－設定頁面</title>
+    <link rel="stylesheet" href="setting.css">
+  </head>
+  <body>
+    <h1>視窗設定</h1>
+    <div class="input-group">
+      <label>視窗背景</label><input type="text" id="background"/>
+    </div>
+
+    <h1>時鐘設定</h1>
+    <div class="input-group">
+      <label>時鐘背景</label><input type="text" id="clock-background"/>
+    </div>
+    <div class="input-group">
+      <label>時鐘大小：</label><input type="text" id="clock-size"/>
+    </div>
+    <div class="input-group">
+      <label>時鐘框長：</label><input type="text" id="clock-border-length"/>
+    </div>
+    <div class="input-group">
+      <label>時鐘框色：</label><input type="color" id="clock-border-color"/>
+    </div>
+    <div class="input-group">
+      <label>時鐘圓角距離：</label><input type="text" id="clock-border-radius"/>
+    </div>
+
+    <div class="input-group">
+      <h2>指針設定：</h2>
+      <div class="input-group">
+        <h3>時針設定：</h3>
+        <div class="input-group">
+          <label>長度比例：</label><input type="text" id="hour-length-ratio"/>
+        </div>
+        <div class="input-group">
+          <label>寬度：</label><input type="text" id="hour-weight"/>
+        </div>
+        <div class="input-group">
+          <label>背景：</label><input type="text" id="hour-background"/>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <h3>分針設定：</h3>
+        <div class="input-group">
+          <label>長度比例：</label><input type="text" id="minute-length-ratio"/>
+        </div>
+        <div class="input-group">
+          <label>寬度：</label><input type="text" id="minute-weight"/>
+        </div>
+        <div class="input-group">
+          <label>背景：</label><input type="text" id="minute-background"/>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <h3>秒針設定：</h3>
+        <div class="input-group">
+          <label>長度比例：</label><input type="text" id="second-length-ratio"/>
+        </div>
+        <div class="input-group">
+          <label>寬度：</label><input type="text" id="second-weight"/>
+        </div>
+        <div class="input-group">
+          <label>背景：</label><input type="text" id="second-background"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <h3>自定義 CSS</h3>
+      <textarea cols="50" id="inject-css">
+      </textarea>
+    </div>
+    <button id="open_clock_button">打開時鐘視窗</button>
+  </body>
+</html>
