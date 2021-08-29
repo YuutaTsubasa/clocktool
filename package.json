@@ -41,8 +41,22 @@
           "name": "@electron-forge/maker-rpm",
           "config": {}
         }
+      ],
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "YuutaTsubasa",
+              "name": "clocktool"
+            }
+          }
+        }
       ]
     }
+  },
+  "build": {
+    "asar": true
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
