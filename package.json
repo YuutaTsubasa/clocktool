@@ -1,39 +1,60 @@
 {
-  "name": "clocktool",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": ".",
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
-  },
+  "name": "clocktool-electron",
+  "productName": "clocktool-electron",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "keywords": [],
+  "author": {
+    "name": "Yuuta Tsubasa",
+    "email": "yuuta.tsubasa.knight@gmail.com"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "clocktool_electron"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "js-yaml": "^4.1.0",
+    "rxjs": "^7.3.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.59",
+    "@electron-forge/maker-deb": "^6.0.0-beta.59",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.59",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.59",
+    "@electron-forge/maker-zip": "^6.0.0-beta.59",
+    "electron": "13.2.3"
   }
 }
