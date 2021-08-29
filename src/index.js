@@ -31,7 +31,8 @@ const createClockWindow = ({size, injectCSS}) => {
       width: size,
       height: size,
       webPreferences: {
-        preload: path.join(__dirname, 'clockPreload.js')
+        preload: path.join(__dirname, 'clockPreload.js'),
+        backgroundThrottling: false,
       }
   });
 
