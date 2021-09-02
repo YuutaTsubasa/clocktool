@@ -1,7 +1,7 @@
 {
   "name": "clocktool-electron",
   "productName": "clocktool-electron",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A clock tool for streaming use.",
   "main": "src/index.js",
   "scripts": {

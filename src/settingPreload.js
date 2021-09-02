@@ -5,10 +5,10 @@ const fs = require('fs');
 const yaml = require('js-yaml');
 
 const settingFields = {
-    "background": "transparent",
-    "clock-background": "white",
+    "background": "rgb(0,255,0)",
+    "clock-background": "url(\"./image/clock.png\")",
     "clock-size": "600px",
-    "clock-border-length": "1px",
+    "clock-border-length": "0px",
     "clock-border-color": "black",
     "clock-border-radius": "600px",
     "hour-length-ratio": "0.5",
