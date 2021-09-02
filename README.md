@@ -1,6 +1,6 @@
 # 時鐘實況小工具 (By [悠太翼](http://yutaii.run/twitter))
 
-![demo.gif](Demo 用的影片)
+![demo.gif](demo.gif)
 
 一個可以用於實況中顯示時間的小工具。
 
@@ -64,3 +64,4 @@ clocktool-electron-darwin-x64-{version}.zip | macOS (64-bit)
 ## 作者
 - [悠太翼 @YuutaTsubasa](http://yutaii.run/twitter)
 - 歡迎訂閱我的 [Youtube 頻道](http://yutaii.run/youtube)！
+- 有任何想要修改的部分歡迎發 Pull Request、發 Issue 或是私訊唷！
