@@ -1,4 +1,4 @@
-# 時鐘實況小工具 (By [悠太翼](http://yutaii.run/twitter))
+# 時鐘實況小工具
 
 ![demo.gif](demo.gif)
 
@@ -65,3 +65,6 @@ clocktool-electron-darwin-x64-{version}.zip | macOS (64-bit)
 - [悠太翼 @YuutaTsubasa](http://yutaii.run/twitter)
 - 歡迎訂閱我的 [Youtube 頻道](http://yutaii.run/youtube)！
 - 有任何想要修改的部分歡迎發 Pull Request、發 Issue 或是私訊唷！
+
+## 貢獻者
+- [Lucas 洛可 @ycs77_lucas_v](https://twitter.com/ycs77_lucas_v)

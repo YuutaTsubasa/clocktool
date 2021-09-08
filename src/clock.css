@@ -51,6 +51,10 @@ body {
     width: calc(var(--clock-size) / 2 * var(--hour-length-ratio) + var(--second-length-offset));
     height: var(--hour-weight);
     background: var(--hour-background);
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .clockHand[data-type=minute] {
@@ -60,6 +64,10 @@ body {
     width: calc(var(--clock-size) / 2 * var(--minute-length-ratio) + var(--minute-length-offset));
     height: var(--minute-weight);
     background: var(--minute-background);
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .clockHand[data-type=second] {
@@ -69,4 +77,8 @@ body {
     width: calc(var(--clock-size) / 2 * var(--second-length-ratio) + var(--second-length-offset));
     height: var(--second-weight);
     background: var(--second-background);
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
